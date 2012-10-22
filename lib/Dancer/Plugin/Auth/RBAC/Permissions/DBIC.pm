@@ -1,6 +1,6 @@
 package Dancer::Plugin::Auth::RBAC::Permissions::DBIC;
 BEGIN {
-    $Dancer::Plugin::Auth::RBAC::Permissions::DBIC::VERSION = '0.001';
+    $Dancer::Plugin::Auth::RBAC::Permissions::DBIC::VERSION = '0.002';
 }
 
 use strict;
@@ -12,7 +12,9 @@ use Dancer::Plugin::DBIC 0.15;
 sub subject_asa {
     my ($self, $options, @arguments) = @_;
     my $role = shift @arguments;
+    return unless $role;
     my $user = $self->credentials;
+    return unless $user->{id};
     my $settings = $class::settings;
 
     my $moniker = $options->{user_moniker} ||= "User";
@@ -33,7 +35,9 @@ sub subject_asa {
 sub subject_can {
     my ($self, $options, @arguments) = @_;
     my ($operation, $action) = @arguments;
+    return unless $operation && $action;
     my $user = $self->credentials;
+    return unless $user->{id};
     my $settings = $class::settings;
 
     my $moniker = $options->{user_moniker} ||= "User";
