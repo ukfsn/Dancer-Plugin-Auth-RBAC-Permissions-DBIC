@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Dancer-Plugin-Auth-RBAC-Permissions-DBIC.t
+lib/Dancer/Plugin/Auth/RBAC/Permissions/DBIC.pm

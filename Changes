@@ -1,0 +1,6 @@
+Revision history for Perl extension Dancer::Plugin::Auth::RBAC::Permissions::DBIC.
+
+0.01  Mon Oct 22 12:16:13 2012
+	- original version; created by h2xs 1.23 with options
+		-X -n Dancer::Plugin::Auth::RBAC::Permissions::DBIC
+
