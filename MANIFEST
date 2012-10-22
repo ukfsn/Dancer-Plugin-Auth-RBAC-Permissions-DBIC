@@ -3,4 +3,9 @@ Makefile.PL
 MANIFEST
 README
 t/Dancer-Plugin-Auth-RBAC-Permissions-DBIC.t
+t/lib/TestSchema.pm
+t/lib/TestSchema/Result/Operation.pm
+t/lib/TestSchema/Result/Permission.pm
+t/lib/TestSchema/Result/Role.pm
+t/lib/TestSchema/Result/User.pm
 lib/Dancer/Plugin/Auth/RBAC/Permissions/DBIC.pm
