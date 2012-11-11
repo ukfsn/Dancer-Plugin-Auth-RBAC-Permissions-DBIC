@@ -1,6 +1,6 @@
 package Dancer::Plugin::Auth::RBAC::Permissions::DBIC;
 BEGIN {
-    $Dancer::Plugin::Auth::RBAC::Permissions::DBIC::VERSION = '0.002';
+    $Dancer::Plugin::Auth::RBAC::Permissions::DBIC::VERSION = '0.003';
 }
 
 use strict;
