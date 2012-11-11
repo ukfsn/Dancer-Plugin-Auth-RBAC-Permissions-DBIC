@@ -9,6 +9,7 @@ WriteMakefile(
         'DBIx::Class::Schema' => '0',
         'File::Temp' => '0',
         'SQL::Translator' => '0.11006',
+        'DBD::SQLite' => 0,
         'Test::More' => '0',
         'ok' => '0'
     },
